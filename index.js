@@ -20,11 +20,12 @@ const npc = newNonPlayableCharacter(50, 300)
 // })
 npc.walkNorth(1400)
     .then(() => npc.walkEast(1200))
-    .then(() => nps.walkSouth(300))
+    .then(() => npc.walkSouth(300))
     .then(() => npc.walkEast(1500))
     .then(() => npc.walkSouth(1500))
     .then(() => npc.walkWest(2700))
     .then(() => npc.walkNorth(400))
+    
 
 
 
