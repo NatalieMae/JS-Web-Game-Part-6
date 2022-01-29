@@ -26,24 +26,42 @@ function newNonPlayableCharacter(x, y) {
     function walkEast() {
         direction = 'east'
         element.src = `./assets/red-character/east.gif`
-        setTimeout(() => {
-            stop()
-        }, 2000)
-    }
+        return new Promise(function(resolve) {
+            setTimeout(() =>{
+                resolve()
+            }, time)
+        })
+       }
+
 
     function walkNorth() {
         direction = 'north'
         element.src = `./assets/red-character/north.gif`
+        return new Promise(function(resolve) {
+            setTimeout(() =>{
+                resolve()
+            }, time)
+        })
     }
 
     function walkWest() {
         direction = 'west'
         element.src = `./assets/red-character/west.gif`
+        return new Promise(function(resolve) {
+            setTimeout(() =>{
+                resolve()
+            }, time)
+        })
     }
 
     function walkSouth() {
         direction = 'south'
         element.src = `./assets/red-character/south.gif`
+        return new Promise(function(resolve) {
+            setTimeout(() =>{
+                resolve()
+            }, time)
+        })
     }
 
     function stop() {
